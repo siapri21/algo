@@ -154,4 +154,80 @@ while(i<=10){
 
 ///////////////////////////////////////////////
 
-let a = 
+//declarer vos revenus 20000 euros
+// TANT que les revenus ne sont pas superieur a 30000
+  //chaque année mes revenus augement de 10% grace à mes placements
+
+  //Au bout de cb d'année mes revenus dépasseront 30000 euros 
+
+let revenus = 20000;
+let annee = 0;
+while (revenus < 30000){
+    revenus = revenus + revenus*0.1;
+    annee = annee + 1;
+    console.log(`${annee}`);
+}
+
+// ////////////////////////////////////////////////////////////
+
+let MAR = 1000000;
+let agadir = 500000;
+let anne = 0
+while(agadir < MAR){
+  MAR = MAR + 50000;
+  agadir *= 1.08;
+  anne++;
+  console.log(`au bout de ${anne} annees Agadir seraplus peupler que marrakech`);
+   
+}
+
+///////////////////////////////////////////////////////////////
+
+
+////boucle for 
+for (let i = 0 ; i <12 ; i++){
+  console.log(i);
+}
+
+for(let i = 0; i <= 10;  i++ ){
+  let res = i*7; 
+  console.log(`${i} x 7 = ${res}`);
+}
+
+
+///////////////////////////////////////////////////////////////
+
+// let val = prompt('Entrez un nombre?');
+// while ( val != 500){
+//   if ( val > 500){
+//     val = prompt(`le nombre magique est plus grand`)
+//   }else if( val < 500 ){
+//     val =prompt(`le nombre magique est plus petit `)
+//   }
+//   console.log(`le nombre magique est ${val}`);
+// }
+
+/////////////////////////////////////////////////////////////////////////
+
+////////////////////////FONCTIONS//////////////////////////
+
+function NaaNaa(){
+  console.log('bonjour');
+}
+
+NaaNaa()
+
+/////////////////
+function NaaNaNa(bonjour, prenom){
+  console.log('bonjour','siapri');
+}
+
+NaaNaNa()
+
+/////////////////////////////
+function carre(c){
+  let p = c*4;
+  return p
+}
+let message = carre(5)
+console.log(message);
